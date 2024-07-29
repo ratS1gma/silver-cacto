@@ -20,7 +20,7 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v Pr
 timeout /t 5 /nobreak
 
 :: Скачивание сертификата
-powershell -Command "Invoke-WebRequest -Uri https://burp/cert -OutFile %TEMP%\cacert.der"
+powershell -Command "Invoke-WebRequest -Uri http://burp/cert -OutFile %TEMP%\cacert.der"
 
 
 :: Установка сертификата
